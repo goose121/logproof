@@ -1,0 +1,93 @@
+
+ \begin{theindex} 
+ \makeatletter\scan@allowedfalse
+{\bfseries\hfil Symbols\hfil}\nopagebreak
+
+  \item \verb*+\@next+\pfill \hdclindex{18}{}{14}
+  \item \verb*+\@stepref+\pfill \hdclindex{18}{}{14}, 
+		\hdclindex{20}{}{16}
+  \item \verb*+\@stripref+\pfill \hdclindex{19}{}{15}, 
+		\hdclindex{20}{}{16}
+
+  \indexspace
+{\bfseries\hfil A\hfil}\nopagebreak
+
+  \item \verb*+\arabic+\pfill \hdclindex{12}{}{9}
+
+  \indexspace
+{\bfseries\hfil B\hfil}\nopagebreak
+
+  \item \verb*+\begin+\pfill \hdclindex{11}{}{8}
+
+  \indexspace
+{\bfseries\hfil C\hfil}\nopagebreak
+
+  \item \verb*+\counterwithin+\pfill \hdclindex{6}{}{3}
+
+  \indexspace
+{\bfseries\hfil D\hfil}\nopagebreak
+
+  \item \verb*+\def+\pfill \hdclindex{18}{}{14}, \hdclindex{19}{}{15}
+  \item \verb*+\displaystyle+\pfill \hdclindex{12}{}{9}
+
+  \indexspace
+{\bfseries\hfil E\hfil}\nopagebreak
+
+  \item \verb*+\else+\pfill \hdclindex{20}{}{16}
+  \item \verb*+\end+\pfill \hdclindex{15}{}{12}
+  \item \verb*+\enspace+\pfill \hdclindex{12}{}{9}, \hdclindex{14}{}{11}
+  \item environments:\efill 
+ \subitem {\ttfamily logproof}\pfill \hdclindex{3}{main}{1}, 
+		\hdclindex{1}{usage}{1}
+  \item \verb*+\expandafter+\pfill \hdclindex{20}{}{16}
+
+  \indexspace
+{\bfseries\hfil F\hfil}\nopagebreak
+
+  \item \verb*+\fi+\pfill \hdclindex{20}{}{16}
+  \item \verb*+\futurelet+\pfill \hdclindex{18}{}{14}
+
+  \indexspace
+{\bfseries\hfil H\hfil}\nopagebreak
+
+  \item \verb*+\hspace+\pfill \hdclindex{13}{}{10}
+
+  \indexspace
+{\bfseries\hfil I\hfil}\nopagebreak
+
+  \item \verb*+\ifx+\pfill \hdclindex{20}{}{16}
+
+  \indexspace
+{\bfseries\hfil L\hfil}\nopagebreak
+
+  \item {\ttfamily logproof} (environment)\pfill 
+		\hdclindex{3}{main}{1}, \hdclindex{1}{usage}{1}
+  \item \verb*+\logproofrulespace+\pfill \hdclindex{7}{}{4}, 
+		\hdclindex{8}{}{5}, \hdclindex{13}{}{10}
+  \item \verb*+\logproofstepautorefname+\pfill \hdclindex{16}{}{13}
+
+  \indexspace
+{\bfseries\hfil N\hfil}\nopagebreak
+
+  \item \verb*+\newcommand+\pfill \hdclindex{16}{}{13}, 
+		\hdclindex{20}{}{16}
+  \item \verb*+\newcounter+\pfill \hdclindex{4}{}{1}, \hdclindex{5}{}{2}
+  \item \verb*+\newenvironment+\pfill \hdclindex{9}{}{6}
+  \item \verb*+\newlength+\pfill \hdclindex{7}{}{4}
+  \item \verb*+\next+\pfill \hdclindex{20}{}{16}
+
+  \indexspace
+{\bfseries\hfil R\hfil}\nopagebreak
+
+  \item \verb*+\ref+\pfill \hdclindex{19}{}{15}, \hdclindex{20}{}{16}
+  \item \verb*+\refstepcounter+\pfill \hdclindex{10}{}{7}, 
+		\hdclindex{12}{}{9}
+
+  \indexspace
+{\bfseries\hfil S\hfil}\nopagebreak
+
+  \item \verb*+\setlength+\pfill \hdclindex{8}{}{5}
+  \item \verb*+\stepref+\pfill \hdclindex{3}{usage}{1}, 
+		\hdclindex{17}{main}{14}, \hdclindex{18}{}{14}
+
+ \end{theindex}

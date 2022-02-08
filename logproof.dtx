@@ -1,0 +1,102 @@
+
+%\iffalse
+%<package> \NeedsTeXFormat{LaTeX2e}
+%<package> \ProvidesPackage{logproof}[2021/02/06 v1.0 Environment for logical proofs]
+%<package> \RequirePackage{array}
+%<package> \RequirePackage{amsmath}
+
+%<*driver>
+\documentclass{ltxdoc}
+\usepackage{logproof}
+\usepackage{hypdoc}
+\usepackage{amsmath}
+\usepackage{fancyvrb-ex}
+\usepackage{tabularx}
+
+\setlength{\marginparsep}{1em}
+\setlength{\marginparpush}{.7ex}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{2ex}
+
+\AtEndDocument{\PrintIndex}
+\begin{document}
+\DocInput{logproof.dtx}
+\end{document}
+%</driver>
+%\fi
+
+% \CheckSum{0}
+%
+% \changes{v1.0}{2021/02/02}{Initial version}
+%
+% \GetFileInfo{logproof.sty}
+%
+% \title{The \textsf{logproof} package\thanks{This document
+% corresponds to \textsf{logproof}~\fileversion, dated \filedate.}}
+% \author{Morgan Hager \\ \texttt{morgan.hager1@gmail.com}}
+%
+% \maketitle
+
+% \section{Usage}
+% \DescribeEnv{logproof} An environment for formal logical proofs. Use
+% \cmd{\label} and \cmd{\stepref} to reference earlier proof steps.
+% 
+% \begin{Example}[gobble=2,xrightmargin=5cm,frame=lines]
+% \begin{logproof}
+%     \label{hyp1} a \rightarrow b && hyp \\
+%     \neg a \lor b & \stepref{hyp1}, & imp
+% \end{logproof}
+% \end{Example}
+%
+% \DescribeMacro{stepref} \marg{label}
+%
+% Reference a proof step without creating a hyperlink. This acts like
+% \cmd{\ref*} if it has been defined (generally by \textsf{hyperref}),
+% otherwise acts like \cmd{\ref}.
+%
+%\section{Macro definitions}
+%
+% \begin{environment}{logproof}
+%    \begin{macrocode}
+\newcounter{logproof}
+%    \end{macrocode}
+% Define a counter for the current item number in the proof.
+%    \begin{macrocode}
+\newcounter{logproofstep}
+\counterwithin*{logproofstep}{logproof}
+%    \end{macrocode}
+% Create a new length for the space between each WFF and the
+% description of the rule of inference used, defaulting to 1.5em.
+%    \begin{macrocode}
+\newlength{\logproofrulespace}
+\setlength{\logproofrulespace}{1.5em}
+%    \end{macrocode}
+% Finally, the definition of the \verb|logproof| environment.
+%    \begin{macrocode}
+\newenvironment{logproof}{%
+  \refstepcounter{logproof}%
+      \begin{tabular}{@{}%
+        >{\refstepcounter{logproofstep}\arabic{logproofstep}.\enspace$\displaystyle}l<{$}%
+        @{\hspace{\logproofrulespace}}r%
+        @{\enspace}l}%
+        }{\end{tabular}}
+%    \end{macrocode}
+%
+% Define a name macro for \verb|logproofstep| to be used with \cmd{\autoref}.
+%    \begin{macrocode}
+\newcommand{\logproofstepautorefname}{step}
+%    \end{macrocode}
+% \end{environment}
+%
+% \begin{macro}{stepref}
+%    \begin{macrocode}
+\def\stepref#1{\ifdefined\href\ref*{#1}\else\ref{#1}\fi}
+%    \end{macrocode}
+% \end{macro}
+
+%\iffalse
+% Local Variables:
+% my/AucTeX-makeindex-opts: "-s gind.ist"
+% End:
+%\fi

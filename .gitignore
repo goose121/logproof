@@ -1,0 +1,13 @@
+*.log
+*.glo
+*.aux
+*.dvi
+*.hd
+*.idx
+*.ilg
+*.ins
+*.log
+*.out
+*.tmp
+*.sty
+*.pdf
